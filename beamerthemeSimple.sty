@@ -1,0 +1,41 @@
+\mode<presentation>
+
+% Settings
+\usepackage{tikz}
+\usetheme{Madrid}
+%\useinnertheme{circles}
+% \useoutertheme{simpleinfo}
+% \useoutertheme{miniframes} % Alternatively: miniframes, infolines, split
+%\usefonttheme{Simple}
+\usecolortheme{DarkBlue}
+
+
+\setbeamertemplate{background}{%
+\begin{tikzpicture}[overlay,remember picture]
+\node[anchor=south west,inner sep=0pt,draw=none,xshift=0.055\paperheight,yshift=0.04\paperheight] at (current page.south west) {\pgfuseimage{logo}};%
+\end{tikzpicture}%
+}
+
+
+\pgfdeclareimage[height=0.13\paperheight]{logo}{images/GTU_LOGO_600X384_JPG_EN}
+
+% \setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+
+
+
+% \setbeamertemplate{footline}{%
+% \vskip0.15\paperheight
+% }
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+%  \setbeamertemplate{footline}{%
+%         \includegraphics[align=t, height=1.3cm]{GTU_LOGO_600X384_JPG_EN.jpg}%
+%         %\hfill
+%  }
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamertemplate{enumerate items}[default]
+% table of contents (overview)
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[default]
+
+\mode<all>
